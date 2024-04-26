@@ -1,0 +1,761 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #61DAFB;
+    color: #000;
+    border-radius: 4px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Review Article Styles */
+article.review {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+article.review img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+article.review h3 {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    article.review img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+#latest-tech-news {
+    margin: 20px;
+    background: white;
+    padding: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.news-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #20232a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#latest-tech-news {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 20px;
+}
+
+.news-item:last-child {
+    border-bottom: none; /* Removes border from the last item */
+}
+
+.news-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%; /* Circular images */
+}
+
+.news-item h3 {
+    color: #007BFF;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.news-item p {
+    color: #666;
+    font-size: 16px;
+}
+
+.news-item a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block; /* Make link block to align better */
+}
+
+.news-item a:hover {
+    text-decoration: underline; /* Add interaction on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #20232a;
+    color: white;
+    width: 100%;
+    margin-top: 20px; /* Ensure some space before the footer */
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+
+    .news-item img {
+        margin-bottom: 10px; /* Add space between the image and text on small screens */
+    }
+}
+
+
+
+.news-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start; /* Align the start of the items */
+    overflow: hidden; /* Keeps the child elements inside the container */
+}
+
+.news-image {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.text-content {
+    flex-grow: 1; /* Allows the text content to fill the remaining space */
+}
+
+.news-title {
+    font-size: 1.2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    text-align: left;
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #20232a;
+    color: #61DAFB;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 20px;
+}
+
+#latest-tech-news {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.news-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #61DAFB; /* Adds a styled border to the image */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.news-title {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.news-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #20232a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 40px; /* Give some space before the footer */
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .news-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .text-content {
+        align-items: center;
+    }
+
+    .news-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Additional styles for headings and links to make the homepage more vibrant */
+h2 {
+    color: #333;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #61DAFB;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0096D6;
+}
+
+
+#popular-reviews {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#popular-reviews h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review.featured {
+    display: flex; /* Enable flex display */
+    align-items: center; /* Vertically center children */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px 0; /* Add some margin around the card */
+}
+.review.featured p {
+    color: black; /* This will ensure the paragraph text is black in both themes */
+  }
+
+.featured-image {
+    flex-basis: 40%; /* Takes up 40% of the flex container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.featured-content {
+    flex-basis: 60%; /* Takes up the remaining 60% of the flex container */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ensures that text does not wrap under the image */
+.featured-content h3,
+.featured-content p {
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .review.featured {
+        flex-direction: column; /* Stack children vertically on smaller screens */
+    }
+    
+
+    .featured-image,
+    .featured-content {
+        flex-basis: auto; /* Auto-adjust to the new flex direction */
+        width: 200%; /* Full width of the container */
+    }
+}
+
+.other-reviews {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns */
+    gap: 20px; /* Space between the cards */
+    max-width: 1200px; /* Max width of the grid container */
+    width: 100%; /* Ensure the container takes up the full width of its parent */
+    margin: auto; /* Center the grid in the middle of the page */
+}
+.reviews-container p {
+    color: black; /* This will ensure the paragraph text is black in both themes */
+  }
+
+.review {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+    
+}
+
+.review-image {
+    display: block;  
+    max-width: 100%; 
+    height: auto;    
+    margin: 0 auto; 
+}
+
+.review-title {
+    font-size: 1.2em; /* Larger text for the title */
+    margin: 10px; /* Space around the title */
+}
+
+.review-description {
+    font-size: 1em; /* Standard text size for description */
+    margin: 0 10px 10px; /* Space around the description */
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+}
+
+
+.review {
+    /* Existing styles... */
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.review-description .full {
+    display: none;
+}
+
+.review-description .more {
+    display: none; /* Hide the extra content initially */
+}
+
+/* Style for when the content is expanded */
+.expanded .more {
+    display: inline; /* Show the extra content */
+}
+
+/* Style for the 'Read more' button when content is expanded */
+.expanded .read-more-btn {
+    display: none; /* Hide the 'Read more' button when content is expanded */
+}
+
+
+.entertainment-review {
+    background: #f9f9f9; /* Light background for the card */
+    border: 1px solid #e1e1e1; /* Add a border for definition */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Smooth shadow for depth */
+    margin: 2em auto; /* Vertical spacing and horizontal centering */
+    padding: 2em;
+    max-width: 650px; /* Optimal reading width */
+    text-align: left; /* Align text to the left for a traditional feel */
+    position: relative;
+    height: auto; /* Ensure containers grow with content */
+    overflow: hidden; 
+}
+ 
+  
+.entertainment-review p {
+    color: black; /* This will ensure the paragraph text is black in both themes */
+  }
+
+.entertainment-review h3 {
+    color: #0077cc; /* Give the titles a pop of color */
+    margin-bottom: 0.5em;
+    text-align: center; /* Center the title for emphasis */
+}
+
+.entertainment-review img {
+    width: 100%; /* Full width for impact */
+    max-height: 400px; /* Set a max-height for the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow behind the image */
+}
+
+.entertainment-review p {
+    background: #ffffff; /* White background for the text */
+    padding: 1em; /* Spacing inside the text block */
+    border-radius: 10px; /* Match the image's rounded corners */
+    font-size: 1em; /* Standard font size */
+    line-height: 1.6; /* Comfortable line height for reading */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Inset shadow for an embossed look */
+    margin-top: -1em; /* Pull the text slightly over the image for layering */
+    position: relative; /* Position relative for stacking context */
+    z-index: 1; /* Ensure the text block is above the image */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .entertainment-review {
+        padding: 1em;
+    }
+    .entertainment-review img {
+        max-height: 300px; /* Smaller image for smaller screens */
+    }
+    .entertainment-review p {
+        margin-top: 0.5em; /* Less overlap on smaller screens */
+    }
+}
+
+:root {
+    --background-light: #fff;
+    --background-dark: #333;
+    --text-light: #333;
+    --text-dark: #fff;
+  }
+  
+  body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  /* Style the button if you like */
+  .theme-toggle {
+    background-color: #444; /* Darker background for contrast */
+    color: #fff; /* White text for readability */
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+    position: absolute; /* Positioning it absolutely */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+.theme-toggle:hover {
+    background-color: #555; /* Slightly lighter on hover for feedback */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6); /* Larger shadow on hover for a 'lifting' effect */
+}
+
+/* When dark mode is active, you may want to adjust the button style */
+body.dark-theme .theme-toggle {
+    background-color: #fff; /* Light background for contrast */
+    color: #444; /* Dark text for readability */
+}
+
+body.dark-theme .theme-toggle:hover {
+    background-color: #eee; /* Slightly darker on hover */
+    color: #333;
+}
+
+
+  body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  h2 {
+    color: var(--heading-color-light); /* Use variable for light theme */
+  }
+  
+  body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  body.dark-theme h2 {
+    color: var(--heading-color-dark); /* Use variable for dark theme */
+  }
+
+  #latest-tech-news h2 {
+    color: black; /* This sets the heading color to black in all themes */
+    /* Add any other styling for the h2 element here */
+  }
+  
+  /* Ensure the black color stays even in dark mode */
+  body.dark-theme #latest-tech-news h2 {
+    color: black;
+  }
+
+  
+  .latestnews-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.latestnews-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.news-item.left {
+    flex-direction: row;
+}
+
+.news-item.left h2 {
+    color: #000;
+}
+
+.news-item.right {
+    flex-direction: row-reverse;
+}
+
+.news-item.right h2 {
+    color: #000;
+}
+
+.latestnews-item img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.latestnews-text {
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+    background: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.latestnews-text h2 {
+    margin-top: 0;
+    color: black;
+}
+
+.latestnews-text p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+}
